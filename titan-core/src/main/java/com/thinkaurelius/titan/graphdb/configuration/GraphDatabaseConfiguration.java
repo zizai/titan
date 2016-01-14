@@ -843,7 +843,7 @@ public class GraphDatabaseConfiguration {
 
     public static final ConfigOption<String> INDEX_NAME = new ConfigOption<String>(INDEX_NS,"index-name",
             "Name of the index if required by the indexing backend",
-            ConfigOption.Type.GLOBAL_OFFLINE, "titan");
+            ConfigOption.Type.MASKABLE, "titan");
 
     public static final ConfigOption<String[]> INDEX_HOSTS = new ConfigOption<String[]>(INDEX_NS,"hostname",
             "The hostname or comma-separated list of hostnames of index backend servers.  " +
